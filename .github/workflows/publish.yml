@@ -16,14 +16,14 @@ jobs:
 
     steps:
       - name: ☁ Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
       - name: 👷 .NET SDK
-        uses: actions/setup-dotnet@v1
+        uses: actions/setup-dotnet@v5
         with:
-          dotnet-version: "6.0"
+          dotnet-version: "10.x"
 
       - name: ⬇ Install dependencies
         run: dotnet restore
@@ -38,7 +38,13 @@ jobs:
         run: dotnet pack ./src/FluentEmail.Graph/FluentEmail.Graph.csproj -c Release -o ./artifacts --no-build
 
       - name: 🔑 Add GitHub packages to nuget sources
-        run: dotnet nuget add source --username USERNAME --password ${{ secrets.GITHUB_TOKEN }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/ESC-BV/index.json"
+        run: |
+          dotnet nuget add source \
+            --username ${{ github.actor }} \
+            --password ${{ secrets.GITHUB_TOKEN }} \
+            --store-password-in-clear-text \
+            --name github \
+            "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json"
 
       - name: 🚀 Push package to Github and NuGet
         run: |

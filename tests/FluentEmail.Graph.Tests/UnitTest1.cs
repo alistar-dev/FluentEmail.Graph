@@ -1,11 +1,10 @@
 namespace FluentEmail.Graph.Tests;
 
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Xunit;
 
-[TestClass]
 public class UnitTest1
 {
-    [TestMethod]
+    [Fact]
     public void TestMethod1()
     {
         // no tests yet, bit hard because you need actual appid, tenantid and secret for integration test
