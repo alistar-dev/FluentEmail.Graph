@@ -50,7 +50,7 @@ v2.1 Added support for Inline images
         <PackageReference Include="JetBrains.Annotations" Version="2025.2.4">
             <PrivateAssets>all</PrivateAssets>
         </PackageReference>
-        <PackageReference Include="Microsoft.Graph" Version="5.101.0" />
+        <PackageReference Include="Microsoft.Graph" Version="5.102.0" />
         <PackageReference Include="MinVer" Version="7.0.0">
             <PrivateAssets>all</PrivateAssets>
             <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
