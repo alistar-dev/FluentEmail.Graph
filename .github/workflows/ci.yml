@@ -15,7 +15,7 @@ jobs:
     env:
       DOTNET_NOLOGO: true
       DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
-      MINVERBUILDMETADATA: build.$GITHUB_RUN_ATTEMPT
+      MINVERBUILDMETADATA: build.${{ github.run_attempt }}
 
     steps:
       - name: ☁ Checkout
@@ -50,5 +50,5 @@ jobs:
             "https://nuget.pkg.github.com/${{ github.repository_owner }}/index.json"
 
       - name: 🚀 Publish to GitHub packages
-        run: dotnet nuget push "./artifacts/*.nupkg" --source "github" --api-key ${{ secrets.GITHUB_TOKEN }}
+        run: dotnet nuget push "./artifacts/*.nupkg" --source "github" --api-key ${{ secrets.GITHUB_TOKEN }} --skip-duplicate
         
