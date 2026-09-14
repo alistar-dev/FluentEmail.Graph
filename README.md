@@ -5,9 +5,8 @@ uses [Microsoft Graph API](https://docs.microsoft.com/en-us/graph/api/resources/
 
 ![Nuget](https://img.shields.io/nuget/v/FluentEmail.Graph)
 
-[![CI](https://github.com/ESC-BV/FluentEmail.Graph/actions/workflows/ci.yml/badge.svg)](https://github.com/ESC-BV/FluentEmail.Graph/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/ESC-BV/FluentEmail.Graph/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/ESC-BV/FluentEmail.Graph/actions/workflows/codeql-analysis.yml)
-[![Publish](https://github.com/ESC-BV/FluentEmail.Graph/actions/workflows/publish.yml/badge.svg)](https://github.com/ESC-BV/FluentEmail.Graph/actions/workflows/publish.yml)
+[![CI](https://github.com/alistar-dev/FluentEmail.Graph/actions/workflows/ci.yml/badge.svg)](https://github.com/ESC-BV/FluentEmail.Graph/actions/workflows/ci.yml)
+[![Publish](https://github.com/alistar-dev/FluentEmail.Graph/actions/workflows/publish.yml/badge.svg)](https://github.com/ESC-BV/FluentEmail.Graph/actions/workflows/publish.yml)
 
 ## Usage
 
@@ -72,6 +71,6 @@ Adding attachments? Then the `Mail.ReadWrite` permissions is also required.
 
 Create new release with creation of new tag on main branch.
 
-Start [publish](https://github.com/ESC-BV/FluentEmail.Graph/actions/workflows/publish.yml) manually, for the new tag.
+Start [publish](https://github.com/alistar-dev/FluentEmail.Graph/actions/workflows/publish.yml) manually, for the new tag.
 This will push the package to github and nuget.org
 
