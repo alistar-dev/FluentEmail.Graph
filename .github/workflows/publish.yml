@@ -3,12 +3,14 @@ name: Publish
 on:
   workflow_dispatch:
 
-permissions: 
-  packages: write
+permissions: {}
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
 
     env:
       DOTNET_NOLOGO: true
