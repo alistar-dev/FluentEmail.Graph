@@ -27,6 +27,7 @@ v2.4 Updated Microsoft.Graph to v5
 v2.2 Added support for Headers
 v2.1 Added support for Inline images
         </PackageReleaseNotes>
+        <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
     </PropertyGroup>
 
     <ItemGroup>
