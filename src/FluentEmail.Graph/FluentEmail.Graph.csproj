@@ -3,11 +3,11 @@
     <PropertyGroup>
         <TargetFramework>net10.0</TargetFramework>
         <Authors>David De Sloovere, Matt Goldman</Authors>
-        <Owner>ESC</Owner>
-        <Company>ESC</Company>
+        <Owner>Alistar</Owner>
+        <Company>Alistar</Company>
         <Description>Sender for FluentEmail that uses Microsoft Graph API. Implements `FluentEmail.Core.Interfaces.ISender`.</Description>
         <PackageTags>fluentemail sender isender graph</PackageTags>
-        <PackageProjectUrl>https://github.com/ESC-BV/FluentEmail.Graph</PackageProjectUrl>
+        <PackageProjectUrl>https://github.com/alistar-dev/FluentEmail.Graph</PackageProjectUrl>
         <PackageIcon>icon.png</PackageIcon>
         <DocumentationFile>bin\$(Configuration)\FluentEmail.Graph.xml</DocumentationFile>
         <EnableNETAnalyzers>true</EnableNETAnalyzers>
@@ -20,8 +20,9 @@
         <Version>0.0.1</Version>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <MinVerVerbosity>detailed</MinVerVerbosity>
-        <MinVerMinimumMajorMinor>4.0</MinVerMinimumMajorMinor>
-        <PackageReleaseNotes>v4.0 Updated Microsoft.Graph to v6
+        <MinVerMinimumMajorMinor>5.0</MinVerMinimumMajorMinor>
+        <PackageReleaseNotes>v5.0 Changed FluentEmail.Core and moved to .NET 10
+v4.0 Updated Microsoft.Graph to v6
 v3.0 Updated all dependencies and upgraded test projects to .NET 10
 v2.4 Updated Microsoft.Graph to v5
 v2.2 Added support for Headers
