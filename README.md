@@ -1,6 +1,8 @@
 # FluentEmail.Graph
 
-Sender for [FluentEmail](https://github.com/lukencode/FluentEmail) that
+> ⚠️ v5 is now using [jcamp-code/FluentEmail](https://github.com/jcamp-code/FluentEmail) instead of the abandoned [lukencode/FluentEmail](https://github.com/lukencode/FluentEmail)
+
+Sender for [FluentEmail](https://github.com/jcamp-code/FluentEmail) that
 uses [Microsoft Graph API](https://docs.microsoft.com/en-us/graph/api/resources/mail-api-overview?view=graph-rest-1.0).
 
 ![Nuget](https://img.shields.io/nuget/v/FluentEmail.Graph)
@@ -32,6 +34,12 @@ Example config in `appsettings.json`
   }
 }
 ```
+
+## v5
+
+Changed from using the abandoned [lukencode/FluentEmail](https://github.com/lukencode/FluentEmail) to better maintained [jcamp-code/FluentEmail](https://github.com/jcamp-code/FluentEmail).
+
+Moved from .NET Standard 2.0 to .NET 10.0 (jcamp-code/FluentEmail is .NET 8.0)
 
 ## v2
 
