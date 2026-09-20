@@ -54,12 +54,12 @@
           "Azure.Core": "1.53.0"
         }
       },
-      "FluentEmail.Core": {
+      "jcamp.FluentEmail.Core": {
         "type": "Transitive",
-        "resolved": "3.0.2",
-        "contentHash": "uQFFbJgMhhCFUti7pfMi429fMNi7fLGMj+7uDtD7POlQzLxlhXJ6tmt4Y1SI51sZsA36GO5b7+o29eY/dKiICQ==",
+        "resolved": "4.0.0",
+        "contentHash": "iwRyGXCRCTtlPbJnq29lY56y3XqcHz4Z01yOlAXIQblOtkS/MYOCt6jp7RuJ8HyO60u1NFZcEQA9SjAJKVGuPw==",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.2"
         }
       },
       "Microsoft.Bcl.AsyncInterfaces": {
@@ -527,8 +527,8 @@
         "type": "Project",
         "dependencies": {
           "Azure.Identity": "[1.21.0, )",
-          "FluentEmail.Core": "[3.0.2, )",
-          "Microsoft.Graph": "[6.6.0, )"
+          "Microsoft.Graph": "[6.6.0, )",
+          "jcamp.FluentEmail.Core": "[4.0.0, )"
         }
       }
     }
